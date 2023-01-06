@@ -1,4 +1,5 @@
 FROM nginx
+USER root
 WORKDIR /nginx
 COPY .  .
 RUN apt-get update && apt-get install net-tools 
